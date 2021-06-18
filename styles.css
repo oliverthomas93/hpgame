@@ -1,0 +1,72 @@
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+      width: 100vw;
+      height: 100vh;
+  }
+
+  .background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://cdn.gamedevmarket.net/wp-content/uploads/20191203145249/4779a7547f510ddb98a89edda4df3c78-700x400.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .player1, .player2 {
+    width: 100px;
+    position: relative;
+  }
+
+  .player1 {
+      top: 250px;
+      left: 250px;
+  }
+
+  .player2 {
+    transform: 'scaleX(-1)';
+    top: 250px;
+    left: 850px;
+  }
+
+  .score-container {
+      display: flex;
+      padding: 10px;
+      color: white;
+      background-color: black;;
+  }
+
+  .container-item {
+      margin: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .score-display {
+    font-size: 20px;
+  }
+  
+  .start-game {
+    padding:4px;
+    font-size:16px;
+  }
+  
+  .game-container {
+    position: relative;
+  }
+  
+  .snitch {
+    width: 50px;
+    position: absolute;
+    display: none;
+  }
+  
